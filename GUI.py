@@ -261,7 +261,7 @@ def main():
       
     # =============================== SQL function code ===============================  
       
-    SQL = SQL_Func.functions("root", "040147", "P1")  
+    SQL = SQL_Func.functions("root", "password", "P1")  
       
     # =============================== History Panel Elements ===============================
     
