@@ -46,11 +46,11 @@ def access():
             window.close()
             
             # Return ID and date
-            if values['ID_val'][0] == '%' and values['ID_val'][1] == 'A': # If swipe card
-              return values['ID_val'][2:12], datetime.now()
+            if values['ID_Val'][0:1] == '%A': # If swipe card
+              return int(values['ID_Val'][2:11]), datetime.now()
             
             else:
-              return values['ID_Val'], datetime.now()
+              return int(values['ID_Val']), datetime.now()
                 
     
 # ===================================================== Admin Window =====================================================
@@ -90,11 +90,11 @@ def admin():
             window.close()
         
             # Return ID
-            if values['ID_val'][0] == '%' and values['ID_val'][1] == 'A': # If swipe card
-              return values['ID_val'][2:12]
+            if values['ID_Val'][0:1] == '%A': # If swipe card
+              return int(values['ID_Val'][2:11])
             
             else:
-              return values['ID_Val']
+              return int(values['ID_Val'])
 
 # ===================================================== Filter Windows =====================================================
 
